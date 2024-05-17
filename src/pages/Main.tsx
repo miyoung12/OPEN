@@ -56,7 +56,7 @@ const Main = () => {
             {gridImages.map((row, rowIndex) => (
               <div
                 key={rowIndex}
-                className="flex mb-5"
+                className="flex mb-4"
               >
                 {row.map((image, colIndex) => (
                   <img
