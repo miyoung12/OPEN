@@ -51,17 +51,17 @@ const Main = () => {
         <div className="flex flex-col justify-center items-center w-screen h-[600px] bg-inherit">
           <div
             ref={imgFrameRef}
-            className="flex flex-col items-center w-[750px] h-[500px] mx-auto my-0 py-[40px] transform translateY-45 bg-[#309FB0]"
+            className="flex flex-col items-center w-[850px] h-[550px] mx-auto my-0 pt-[40px] transform translateY-45 bg-[#309FB0]"
           >
             {gridImages.map((row, rowIndex) => (
               <div
                 key={rowIndex}
-                className="flex mb-3"
+                className="flex mb-5"
               >
                 {row.map((image, colIndex) => (
                   <img
                     key={colIndex}
-                    className="w-[336px] h-[189px] relative mx-2 bg-white overflow-hidden object-cover"
+                    className="w-[368px] h-[207px] relative mx-2 bg-white overflow-hidden object-cover"
                     onClick={() => {
                       const index = rowIndex * 2 + colIndex;
                       fileInputs.current && fileInputs.current[index]?.click();
@@ -73,8 +73,9 @@ const Main = () => {
             ))}
             <div className="flex flex-col mt-[6px] text-center text-white">
               <img
-                className="flex w-[70px] pb-[13px]"
-                src="src/assets/open_yellow.png"
+                className="flex w-[100px] pb-[13px]"
+                // src="src/assets/open_yellow.png"
+                src="src/assets/logo_y.png"
                 alt=""
               />
             </div>
